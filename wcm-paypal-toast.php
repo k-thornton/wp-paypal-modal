@@ -1,8 +1,11 @@
 <?php
 
 /**
- * Plugin Name: WCM PayPal Return Toast
- * Description: Shows a thank-you toast when PayPal returns with a completed payment, then strips PayPal query params.
+ * Plugin Name: PayPal "Thank You" Modal
+ * Plugin URI: https://github.com/k-thornton/wp-paypal-modal
+ * Description: Shows a thank-you modal dialog when PayPal returns with a completed payment, then strips PayPal query params.
+ * Author: Kyle Thornton
+ * Author URI: https://github.com/k-thornton
  * Version: 1.0.0
  */
 
