@@ -1,6 +1,8 @@
-# WCM PayPal Return Toast
+# WordPress PayPal Return Modal
 
-A lightweight WordPress plugin that detects PayPal return query parameters, shows a "Donation Received" modal, and removes PayPal parameters (including PII) from the URL without reloading the page.
+A lightweight WordPress plugin that detects PayPal return query parameters, shows a "Donation Received" modal, and removes PayPal parameters (including sensitive personal information) from the URL without reloading the page.
+
+This was developed explicitly for Whole Child Montessori Preschool, and contains code specific to that use case.  It should work generically though for catching PayPal return URLs, and provide a template for parsing out custom fields.
 
 ## What It Does
 
@@ -13,10 +15,8 @@ A lightweight WordPress plugin that detects PayPal return query parameters, show
 
 ## Installation
 
-1. Copy `wcm-paypal-toast.php` into your WordPress plugins directory:
-   `wp-content/plugins/wcm-paypal-toast/` or using the UI, go to Add New Plugin and upload as zip file.
-2. In WordPress Admin, go to **Plugins**.
-3. Activate **WCM PayPal Return Toast**.
+1. Use the WordPress "Add New Plugin" menu to upload this code as a zip file.
+2. Activate the new plugin.
 
 ## Usage
 
@@ -38,6 +38,7 @@ On page load:
 - The script executes for all frontend pages because it is attached to `wp_footer`.
 - URL cleanup is performed even when a success modal is not shown, as long as recognized PayPal params are present.
 - The modal is rendered inline with basic styles and a very high z-index for visibility.
+- The modal is intentionally unstyled as much as possible, to allow for the theme's styling to apply to its elements.
 
 ## File
 
