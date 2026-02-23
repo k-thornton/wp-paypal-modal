@@ -14,7 +14,7 @@ A lightweight WordPress plugin that detects PayPal return query parameters, show
 ## Installation
 
 1. Copy `wcm-paypal-toast.php` into your WordPress plugins directory:
-   `wp-content/plugins/wcm-paypal-toast/`
+   `wp-content/plugins/wcm-paypal-toast/` or using the UI, go to Add New Plugin and upload as zip file.
 2. In WordPress Admin, go to **Plugins**.
 3. Activate **WCM PayPal Return Toast**.
 
